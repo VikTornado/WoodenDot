@@ -12,9 +12,8 @@ li{
     color: #000000;
 }
 h1{
-    font-family: 'Cardo', serif;
-    font-style: normal;
+    font-family: Cardo, serif;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 36px;
     line-height: 23px;
 }
