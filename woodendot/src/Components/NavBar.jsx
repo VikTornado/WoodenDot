@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import logo from './Assets/wooden2.png'
 import {FiMenu} from "react-icons/fi";
 
 const NavBar = () => {
@@ -9,19 +8,19 @@ const NavBar = () => {
     }
     return (
         <div className={"absolute w-full h-full border-b-2"}>
-            <div className={"max-w-[1440px] flex justify-between items-center p-4"}>
+            <div className={"max-w-[1440px] flex m-auto justify-between items-center p-4"}>
                 <ul className={"hidden sm:flex"}>
                     <li className={"pr-5"}>Wooden Furniture</li>
                     <li className={"pr-5"}>About</li>
                     <li className={"pr-5"}>Stories</li>
                 </ul>
-                <div onClick={handleNav}>
-                    <img className={"w-[190px] h-[36px] font-bold"} src={logo} alt={""}/>
+                <div className={nav ? "text-white z-10 sm:text-black" : "text-black"}>
+                    <h1>Woodendot</h1>
                 </div>
                 <div></div>
                 <div></div>
-                <div className={"cursor-pointer sm:hidden text-black z-10"}>
-                    <FiMenu onClick={handleNav} size={25}/>
+                <div className={"cursor-pointer sm:hidden z-10 "}>
+                    <FiMenu className={nav ? "text-white" : "text-black"} onClick={handleNav} size={25}/>
                 </div>
                 <div
                     className={nav ? "overflow-hidden sm:hidden ease-in duration-500 absolute w-full top-0 left-0 h-screen bg-black/90 flex px-4 py-7 text-white"
