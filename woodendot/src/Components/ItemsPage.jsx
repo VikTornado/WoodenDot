@@ -7,7 +7,7 @@ import star from './Assets/star.svg'
 
 const ItemsPage = () => {
     return (
-        <div className={"max-w-[1440px] m-auto"}>
+        <div className={"max-w-[1440px] bg-[#F7F7F7] m-auto"}>
             <div className={"hidden w-full sm:flex justify-between items-center m-auto px-4"}>
                 <div className={"py-[65px] md:flex items-center text-center"}>
                     <img className={"md:mr-5 m-auto"} src={car} alt={""}/>

@@ -6,7 +6,7 @@ import img4 from './Assets/4.png'
 
 const PhotoPage = () => {
     return (
-        <div className={"max-w-[1440px] m-auto"}>
+        <div className={"max-w-[1440px] bg-[#F7F7F7] m-auto"}>
             <div className={"w-full grid md:grid-cols-2 xl:grid-cols-4"}>
                 <img className={"w-full"} src={img1} alt={"img"}/>
                 <img className={"w-full"} src={img2} alt={"img"}/>

@@ -3,7 +3,7 @@ import img from './Assets/5.png'
 
 const CloePage = () => {
     return (
-        <div className={"max-w-[1440px] h-auto m-auto grid grid-cols-1 md:grid-cols-2"}>
+        <div className={"max-w-[1440px] bg-[#F7F7F7] h-auto m-auto grid grid-cols-1 md:grid-cols-2"}>
             <div className={"w-full h-full text-center px-6 flex flex-col justify-center pb-6 md:text-right"}>
                 <h2 className={"text-[36px] font-bold pb-[4px]"}>Cloe</h2>
                 <p className={"italic text-2xl pb-[20px]"}>Modular Storage System</p>
