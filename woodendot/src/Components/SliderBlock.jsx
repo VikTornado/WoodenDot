@@ -41,15 +41,15 @@ const SliderBlock = () => {
     };
 
     return (
-        <div className={"bg-[#F7F7F7] max-w-[1440px] m-auto pb-[82px]"}>
+        <div className={"bg-[#F7F7F7] max-w-[1440px] m-auto pb-[82px] text-center"}>
             <h2 className={"pt-[61px] pb-5 text-[30px] text-center"}>Our pieces inside your home</h2>
-            <p className={"text-center text-[18px] pb-[37px]"}>Get inspired by our products in real-life. Tag us and be featured!</p>
+            <p className={"text-center text-[18px] pb-[37px] "}>Get inspired by our products in real-life. Tag us and be featured!</p>
             <Carousel showDots={true}
                         responsive={responsive}>
                 {sliderData.map((item) => {
                     return (
-                        <div className={"w-full h-full grid gap-x-8 px-2 mb-10"}>
-                            <img className={""} src={item.img} alt={""}/>
+                        <div className={"w-full h-full text-center m-auto grid gap-x-8 mb-10"}>
+                            <img className={"w-full"} src={item.img} alt={""}/>
                         </div>
                     )
                 })}

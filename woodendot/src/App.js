@@ -11,6 +11,8 @@ import SliderBlock from "./Components/SliderBlock";
 import ItemsBlock from "./Components/ItemsBlock";
 import BateaPage from "./Components/BateaPage";
 import SliderText from "./Components/SliderText";
+import Talking from "./Components/Talking";
+import Footer from "./Components/Footer";
 
 function App(props) {
     return (
@@ -27,6 +29,8 @@ function App(props) {
             <SliderBlock/>
             <SliderText/>
             <ItemsBlock items={props.items}/>
+            {/*<Talking/>*/}
+            <Footer/>
         </div>
     );
 }

@@ -1,10 +1,13 @@
-import React from 'react';
+import React, {useState} from 'react';
 import lamp from './Assets/FrameLamp.svg'
-import star from './Assets/star.svg'
+import hands from './Assets/hands.svg'
 import list from './Assets/list.svg'
 import paper from './Assets/paper.svg'
 
 const ItemsBlock = () => {
+    const [ color, setColor ] = useState([]);
+    // const [ backgroundColor ] = useState('#f44');
+
     const ItemsBlock = [
         {
             img: lamp,
@@ -14,7 +17,7 @@ const ItemsBlock = () => {
             id: 1
         },
         {
-            img: star,
+            img: hands,
             title: "MADE",
             text: "Our local design, and production in the village of Iscar, Spain.",
             btn: "Learn More",
@@ -35,17 +38,22 @@ const ItemsBlock = () => {
             id: 4
         },
     ]
+
+
+
+    console.log(ItemsBlock)
     return (
-        <div className={"max-w-[1440px] m-auto p-4 flex"}>
-            <div className={"flex w-[360] h-[360px]"}>
-                {ItemsBlock.map((item) => {
-                    console.log(item.img)
+        <div className={"max-w-[1440px] m-auto"}>
+            <div className={"grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4"}>
+                {ItemsBlock.map((item, id) => {
                     return (
-                        <div key={item.title} className={"flex flex-col"}>
-                            <img className={""} alt={item.title} src={item.img}/>
-                            <h3>{item.title}</h3>
-                            <p>{item.text}</p>
-                            <span>{item.btn}</span>
+                        <div className={"bg-[#F7F7F7]"}>
+                            <div key={item.title} className={"px-2"}>
+                                <img className={"pt-[63px] pb-[35px] flex m-auto"} alt={item.title} src={item.img}/>
+                                <h3 className={"text-[24px] pb-[12px] text-center"}>{item.title}</h3>
+                                <p className={"text-center text-[15px] leading-7 pb-[25px]"}>{item.text}</p>
+                                <p className={"text-center pb-[50px] underline cursor-pointer"}>{item.btn}</p>
+                            </div>
                         </div>
                     )
                 })}
